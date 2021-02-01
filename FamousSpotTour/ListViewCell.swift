@@ -140,10 +140,7 @@ class ListViewCell: UITableViewCell {
         self.rightImageBlock.addArrangedSubview(self.image1)
         self.rightImageBlock.addArrangedSubview(self.image2)
         self.image1.snp.makeConstraints { (make) -> Void in
-            make.width.height.equalTo(contentView.bounds.width * 0.3)
-        }
-        self.image2.snp.makeConstraints { (make) -> Void in
-            make.width.height.equalTo(contentView.bounds.width * 0.3)
+            make.width.height.equalTo(contentView.bounds.width * 0.3).labeled("image1.height")
         }
     }
 
